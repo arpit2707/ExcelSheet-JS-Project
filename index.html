@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Excel</title>
+</head>
+<body>
+    <div class="page-actions-container">
+        <div class="page-action">Home</div>
+        <div class="page-action">File</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div class="cellprops-actions-container">
+        <span class="material-icons">
+            content_copy
+        </span>
+        <span class="material-icons">
+            content_cut
+        </span>
+        <span class="material-icons">
+            content_paste
+        </span>
+        <select class="font-family-prop">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="cursive">Cursive</option>
+        </select>
+        <select class="font-size-prop">
+            <option>14</option>
+            <option>16</option>
+            <option>18</option>
+            <option>20</option>
+        </select>
+        <span class="material-icons">
+            format_bold
+        </span>
+        <span class="material-icons">
+            format_italic
+        </span>
+        <span class="material-icons">
+            format_underlined
+        </span>
+        <span class="material-icons">
+            format_align_left
+        </span>
+        <span class="material-icons">
+            format_align_center
+        </span>
+        <span class="material-icons">
+            format_align_right
+        </span>
+    </div>
+
+    <div class="formula-actions-container"></div>
+    <div class="grid-cont"></div>
+    <div class="sheet-actions-container">
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+                </span>
+        </div>
+            <div class="sheets-folder-cont">
+                <div class="sheet-folder">
+                    Sheet1
+                </div>
+            </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

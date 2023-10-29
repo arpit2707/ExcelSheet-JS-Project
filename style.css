@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.page-actions-container{
+    height:3rem;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: flex-end;
+}
+.page-action{
+    margin:0.5rem;
+    color: #f1f2f7;
+    align-items: flex-end ;
+}
+.cellprops-actions-container{
+    height: 3rem;
+    background-color: lightsalmon;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+/* ye span hai isme height width apply n 
+hoga to iski display ko inline block kar denge to ye inline block ki tarah kam karega */
+ /* ( > * ) show ki iske andar jo bhi aayegaa uski property kar do display inline block */
+.cellprops-actions-container > * {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.font-family-prop{
+    padding:0.2rem;
+}
+.cellprops-actions-container > select {
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.font-size-prop{
+    padding: 0.2rem;
+}
+.formula-actions-container{
+    height:3rem;
+    background-color: lightblue;
+}
+.grid-cont{
+    height: calc(100vh - 3rem - 3rem - 3rem);
+}
+.sheet-actions-container{
+    height:3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    gap: 1rem;
+}
+.sheet-actions-container>{
+    display: inline-block;
+}
+.sheets-folder-cont{
+    height: 80%;
+    width: 5rem;
+    display: flex;
+    align-items: center;    
+    width: calc( 100vw - 2vw );
+}
+.sheet-add-icon{
+    width: 4vw;
+}
+.sheet-folder{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration-thickness: 2px;
+}
