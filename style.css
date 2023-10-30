@@ -1,80 +1,196 @@
 * {
     box-sizing: border-box;
 }
-
-body{
-    padding:0;
-    margin:0;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.page-actions-container{
-    height:3rem;
-    background-color: lightseagreen;
+.page-actions-cont {
+    height: 3rem;
+    background-color: #218c74;
     display: flex;
     align-items: flex-end;
+    padding-left: 1rem;
 }
-.page-action{
-    margin:0.5rem;
-    color: #f1f2f7;
-    align-items: flex-end ;
+.page-action {
+    width: 3.5rem;
+    height: 2rem;
+    text-align: center;
+    color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.cellprops-actions-container{
+.selected-page-action {
+    background-color: #f1f2f6;
+    color: #218c74;
+}
+.cellprop-actions-cont {
     height: 3rem;
-    background-color: lightsalmon;
+    background-color: #ecf0f1;
     display: flex;
     align-items: center;
     padding-left: 1rem;
 }
-/* ye span hai isme height width apply n 
-hoga to iski display ko inline block kar denge to ye inline block ki tarah kam karega */
- /* ( > * ) show ki iske andar jo bhi aayegaa uski property kar do display inline block */
-.cellprops-actions-container > * {
+.cellprop-actions-cont > * {
     display: inline-block;
     margin-right: 1rem;
 }
-.font-family-prop{
-    padding:0.2rem;
+.cellprop-actions-cont > *:hover {
+    cursor: pointer;
 }
-.cellprops-actions-container > select {
+.cellprop-actions-cont > select {
     border: none;
     border-radius: 2px;
     outline: none;
 }
-.font-size-prop{
+.font-family-prop {
     padding: 0.2rem;
 }
-.formula-actions-container{
-    height:3rem;
-    background-color: lightblue;
+.font-size-prop {
+    padding: 0.2rem;
 }
-.grid-cont{
-    height: calc(100vh - 3rem - 3rem - 3rem);
-}
-.sheet-actions-container{
-    height:3rem;
+.formula-actions-cont {
+    height: 2rem;
     background-color: #ecf0f1;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.formula-actions-cont > * {
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+.formula-icon {
+    width: 1.2rem; 
+}
+.address-bar {
+    width: 5rem;
+    text-align: center;
+}
+.formula-bar {
+    width: calc( 100vw - 5rem - 0.7rem - 0.7rem - 0.7rem );
+}
+.formula-actions-cont > input {
+    border: none;
+    outline: none;
+    height: 70%;
+}
+.sheet-actions-cont {
+    height: 3rem;
     display: flex;
     align-items: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     gap: 1rem;
+    background-color: #ecf0f1;
 }
-.sheet-actions-container>{
+.sheet-actions-cont > * {
     display: inline-block;
 }
-.sheets-folder-cont{
+.sheet-add-icon {
+    width: 2vw;
+}
+.sheet-add-icon:hover {
+    cursor: default;
+}
+
+.sheets-folder-cont {
+    display: flex;
+    align-items: center;
     height: 80%;
     width: 5rem;
-    display: flex;
-    align-items: center;    
     width: calc( 100vw - 2vw );
+    overflow: auto;
 }
-.sheet-add-icon{
-    width: 4vw;
-}
-.sheet-folder{
+.sheet-folder {
+    height: 80%;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 0.9rem;
     text-decoration-thickness: 3px;
+    font-size: 0.9rem;
+<<<<<<< HEAD
+    /* background-color: lightblue; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sheet-content {
+    width: 5rem;
+    /* background-color: lightgreen; */
+}
+
+.grid-cont {
+    height: calc( 100vh - 3rem - 3rem - 2rem - 3rem );
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
+}
+
+.top-left-dummy-box {
+    height: 2rem;
+    width: 2rem;
+    background-color: #747d8c;
+    position: fixed;
+    z-index: 4;
+}
+.address-col-cont {
+    position: sticky;
+    top: 2rem;
+    background-color: lightblue;
+    left: 0;
+}
+.address-row-cont {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 2rem;
+}
+.cells-cont {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+
+.address-col {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfe4ea;
+}
+.address-row {
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-cont {
+    display: flex;
+}
+.cell {
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    outline: none;
+}
+
+.color-prop {
+    position: relative;
+}
+.color-prop > input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+=======
+    text-decoration-thickness: 3px;
+>>>>>>> b7450c53ae16482e8e762bfce5591a4eaa3a2e04
 }
